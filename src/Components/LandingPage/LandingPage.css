@@ -1,0 +1,57 @@
+.landing-page {
+  height: 100vh;
+  background-image: url('https://picsum.photos/1680/1050');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing-page-shadow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.landing-page-shadow .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 50%;
+}
+
+@media (min-height:700px) {
+
+  .landing-page-shadow .container {
+    height: 40%;
+  }
+}
+
+.landing-page-btn {
+  border: 3px solid #FFF;
+  padding: 15px 55px;
+  transition: 1s all;
+}
+
+.landing-page-btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.landing-page h1, .landing-page p {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .landing-page-shadow .container {
+    height: 25%;
+  }
+
+  .landing-page h1, .landing-page p {
+    width: 55%;
+  }
+}
