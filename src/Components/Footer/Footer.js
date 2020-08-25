@@ -8,7 +8,7 @@ function Footer () {
   return (
     <footer>
       <div class="container">
-        <a>Nazwa firmy - wszelkie prawa zastrzeżone, 2019</a>
+        Nazwa firmy - wszelkie prawa zastrzeżone, 2019
         <div class="footer-links">
           <a href="https://www.instagram.com/">
             <FontAwesomeIcon icon={faInstagram} />
