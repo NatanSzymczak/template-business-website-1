@@ -1,0 +1,57 @@
+.about-employee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+  font-size: 18px;
+}
+
+.about-employee-pic {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-employee:last-child {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.about-employee-desc {
+  text-align: justify;
+}
+
+.about-employee-desc h2 {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .about-employee {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .about-employee-pic {
+    margin-bottom: 0;
+  }
+
+  .about-employee-desc {
+    width: calc(100% - 260px);
+    text-align: left;
+  }
+
+  .about-employee:nth-of-type(even) {   /* parzyste */
+    flex-direction: row-reverse;
+  }
+
+  .about-employee:nth-of-type(even) .about-employee-desc {
+    text-align: right;
+  }
+}

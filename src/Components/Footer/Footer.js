@@ -7,9 +7,9 @@ import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icon
 function Footer () {
   return (
     <footer>
-      <div class="container">
+      <div className="container">
         Nazwa firmy - wszelkie prawa zastrzeżone, 2019
-        <div class="footer-links">
+        <div className="footer-links">
           <a href="https://www.instagram.com/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
