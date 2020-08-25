@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutEmployee.css';
 
-function AboutEmployee({ name='Uknown name', desc='No description povided', img='https://via.placeholder.com/150' }) {
+function AboutEmployee({ name='Uknown name', department='FC', desc='No description povided', img='https://via.placeholder.com/150' }) {
   let parsedImg;
 
   if (img.length < 10) {
@@ -12,7 +12,7 @@ function AboutEmployee({ name='Uknown name', desc='No description povided', img=
     <div className="about-employee">
       <div className="about-employee-pic" style={{backgroundImage: `url(${parsedImg})`}}></div>
       <div className="about-employee-desc">
-        <h2>{name}</h2>
+        <h3>{name}  [ {department} ]</h3>
         <p>{desc}</p>
       </div>
     </div>
